@@ -1,12 +1,32 @@
 const express = require("express");
 const app = express();
 
+const users = [];
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.post("/submit", (req, res) => {
   console.log(req.body);
+  users.push(req.body);
+  console.log(users);
   res.send("data received");
+});
+
+app.get("/users", (req, res) => {
+  res.send(users);
+});
+
+app.get("/users/:id", (req, res) => {
+  const id = req.params.id;
+  const index = Number(id);
+  const user = users[index];
+  console.log(user);
+  if (!user) {
+    res.status(404);
+    res.send("user not found");
+  }
+  res.send(user);
 });
 
 app.get("/", (req, res) => {
