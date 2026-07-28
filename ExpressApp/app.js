@@ -6,49 +6,76 @@ const users = [];
 app.use(express.json()); // JSON data पढ़ने के लिए
 app.use(express.urlencoded({ extended: true })); // Form data पढ़ने के लिए
 
-app.put("/users/:id", (req, res) => {
-  const id = Number(req.params.id); // किस user को update करना है
-
-  const user = users[id]; // check करना कि user मौजूद है या नहीं
-
-  if (!user) {
-    // अगर user नहीं मिला
-    return res.status(404).send("User not found"); // 404 भेजकर function यहीं रोक दो
-  }
-
-  const newUser = req.body; // client से नया data लेना
-
-  users[id] = newUser; // पुराने user की जगह नया data रखना
-
-  res.send("User Updated Successfully"); // client को success response भेजना
-});
+// ==================== CREATE ====================
 
 app.post("/submit", (req, res) => {
-  console.log(req.body); // client द्वारा भेजा गया data देखना
+  console.log(req.body); // Client द्वारा भेजा गया data देखना
 
   users.push(req.body); // नया user array में जोड़ना
 
-  console.log(users); // updated users array देखना
+  console.log(users); // Updated users array देखना
 
-  res.send("Data Received"); // client को success response भेजना
+  res.send("Data Received"); // Client को success response भेजना
 });
+
+// ===================== READ ALL =====================
 
 app.get("/users", (req, res) => {
   res.send(users); // सभी users भेजना
 });
 
+// ===================== READ ONE =====================
+
 app.get("/users/:id", (req, res) => {
   const id = Number(req.params.id); // URL से user की id लेना
 
-  const user = users[id]; // उस id का user निकालना
+  const user = users[id]; // Check करना कि user मौजूद है या नहीं
 
   if (!user) {
     // अगर user नहीं मिला
     return res.status(404).send("User not found"); // 404 भेजकर function यहीं रोक दो
   }
 
-  res.send(user); // requested user भेजना
+  res.send(user); // Requested user भेजना
 });
+
+// ===================== UPDATE =====================
+
+app.put("/users/:id", (req, res) => {
+  const id = Number(req.params.id); // किस user को update करना है
+
+  const user = users[id]; // Check करना कि user मौजूद है या नहीं
+
+  if (!user) {
+    // अगर user नहीं मिला
+    return res.status(404).send("User not found"); // 404 भेजकर function यहीं रोक दो
+  }
+
+  const newUser = req.body; // Client से नया data लेना
+
+  users[id] = newUser; // पुराने user की जगह नया data रखना
+
+  res.send("User Updated Successfully"); // Client को success response भेजना
+});
+
+// ===================== DELETE =====================
+
+app.delete("/users/:id", (req, res) => {
+  const id = Number(req.params.id); // किस user को delete करना है
+
+  const user = users[id]; // Check करना कि user मौजूद है या नहीं
+
+  if (!user) {
+    // अगर user नहीं मिला
+    return res.status(404).send("User not found"); // 404 भेजकर function यहीं रोक दो
+  }
+
+  users.splice(id, 1); // Array से उस user को delete करना
+
+  res.send("User Deleted Successfully"); // Client को success response भेजना
+});
+
+// ===================== OTHER ROUTES =====================
 
 app.get("/", (req, res) => {
   res.send("Hello World"); // Home page response भेजना

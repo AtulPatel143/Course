@@ -1,5 +1,5 @@
 ==========================================
-          NODE.JS STATUS
+NODE.JS STATUS
 ==========================================
 
 ✅ COMPLETED
@@ -25,16 +25,15 @@
 ✔ Installing Packages
 ✔ cowsay Package
 ✔ Using External Packages
+✔ npm Scripts
+✔ Nodemon
 
-------------------------------------------
+---
 
-📚 NODE TOPICS REMAINING
-
-✔ npm Scripts (Completed through Nodemon in Express)
-✔ (Node Foundation Complete)
+🎉 NODE.JS FOUNDATION COMPLETE ✅
 
 ==========================================
-         EXPRESS.JS STATUS
+EXPRESS.JS STATUS
 ==========================================
 
 ✅ COMPLETED
@@ -44,6 +43,10 @@
 ✔ app.listen()
 ✔ Routing
 ✔ app.get()
+✔ app.post()
+✔ app.put()
+✔ app.delete()
+
 ✔ req
 ✔ res
 ✔ req.url
@@ -51,31 +54,48 @@
 ✔ req.headers
 ✔ req.params
 ✔ req.query
+✔ req.body
+
 ✔ res.send()
 ✔ res.json()
 ✔ res.status()
-✔ Nodemon
+
 ✔ GET Request
 ✔ POST Request
+✔ PUT Request
+✔ DELETE Request
+
 ✔ express.json()
 ✔ express.urlencoded()
-✔ req.body
+
 ✔ HTML Form
 ✔ CSS Form
 ✔ Form → Express → req.body Flow
+
 ✔ Hoppscotch Testing
 
-------------------------------------------
+✔ Store Data in Array
+✔ Display Stored Data (GET All)
+✔ Display Single User (GET by ID)
+✔ Update User (PUT)
+✔ Delete User (DELETE)
+
+✔ Validation
+✔ return
+✔ 404 (User Not Found)
+✔ splice()
+
+---
 
 📚 NEXT TOPICS
 
-1. Store Data in Array
-2. Display Stored Data (GET)
-3. Update Data (PUT)
-4. Delete Data (DELETE)
-5. Express Router
-6. MVC Architecture
-7. Database (Prisma)
+1. Express Router
+2. MVC Architecture
+3. SQL
+4. Node + SQL
+5. MongoDB
+6. MongoDB with Express
+7. Prisma
 8. CRUD with Database
 9. Authentication (JWT)
 10. Complete REST API
@@ -84,9 +104,12 @@
 CURRENT PROGRESS
 ==========================================
 
-🟢 Node.js Foundation      ✅ 100% Complete
+🟢 Node.js Foundation ✅ 100% Complete
 
-🟢 Express Foundation      ✅ ~75% Complete
+🟢 Express Foundation ✅ 100% Complete
+
+🟢 CRUD APIs (Memory) ✅ 100% Complete
 
 🎯 Current Topic
-→ Store Data in Array
+
+➡ Express Router
