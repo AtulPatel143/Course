@@ -1,9 +1,12 @@
 const express = require("express");
-
 const app = express();
 
-app.get("/", (req, res) => {
-  res.send("Hello World");
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+app.post("/submit", (req, res) => {
+  console.log(req.body);
+  res.send("data received");
 });
 
 app.get("/", (req, res) => {
@@ -11,10 +14,13 @@ app.get("/", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-  console.log(req.url);
-  console.log(req.method);
-  console.log(req.headers);
-  res.send("Welcome to About Page");
+  res.json({
+    message: "Welcome to About Page",
+  });
+});
+
+app.get("/ping", (req, res) => {
+  res.json({ message: "Hello World", name: req.query.name });
 });
 
 app.get("/contact", (req, res) => {
@@ -39,6 +45,11 @@ app.get("/search", (req, res) => {
   console.log(req.query.age);
 
   res.send(`Searching for ${req.query.name}, Age: ${req.query.age}`);
+});
+
+app.get("/status", (req, res) => {
+  res.status(200);
+  res.send("Status is OK");
 });
 
 app.listen(3000, () => {
