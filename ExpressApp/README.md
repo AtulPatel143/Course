@@ -92,11 +92,19 @@
 ✔ Why Express Router?
 ✔ routes Folder
 ✔ user.js
+✔ product.js
 ✔ express.Router()
+✔ router.get()
 ✔ router.post()
+✔ router.put()
+✔ router.delete()
 ✔ module.exports
 ✔ require("./routes/user")
+✔ require("./routes/product")
 ✔ app.use(userRouter)
+✔ Base Path
+✔ app.use("/users", userRouter)
+✔ app.use("/products", productRouter)
 ✔ Router Flow
 ✔ Hoppscotch Testing
 ✔ app.post() vs router.post()
@@ -106,26 +114,21 @@
 ✔ require("../data")
 ✔ Share Data Between Files
 ✔ Fix users is not defined
-✔ CRUD Inside Router
-✔ POST in Router
-✔ GET All in Router
-✔ GET By ID in Router
-✔ PUT in Router
-✔ DELETE in Router
+
+✔ CRUD Inside User Router
+✔ CRUD Inside Product Router
 
 ------------------------------------------
 
 📚 EXPRESS ROUTER (Remaining)
 
-⬜ Base Path (app.use("/users", userRouter))
-⬜ Multiple Routers
 ⬜ Router Best Practices
 
 ------------------------------------------
 
 📚 NEXT TOPICS
 
-1. Express Router (Remaining)
+1. Router Best Practices
 2. MVC Architecture
 3. SQL
 4. Node + SQL
@@ -146,8 +149,9 @@ CURRENT PROGRESS
 
 🟢 CRUD APIs (Memory)       ✅ 100% Complete
 
-🟡 Express Router           ✅ ~90% Complete
+🟢 Express Router           ✅ ~98% Complete
 
 🎯 Current Topic
 
-➡ Express Router (Base Path)
+➡ Router Best Practices
+➡ Next: MVC Architecture

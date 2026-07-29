@@ -21,7 +21,7 @@ router.get("/users", (req, res) => {
 
 // ==================== READ ONE ====================
 
-router.get("/users/:id", (req, res) => {
+router.get("/:id", (req, res) => {
   const id = Number(req.params.id); // URL से id लेना
 
   const user = users[id]; // उस id का user निकालना
@@ -35,7 +35,7 @@ router.get("/users/:id", (req, res) => {
 
 // ==================== UPDATE ====================
 
-router.put("/users/:id", (req, res) => {
+router.put("/:id", (req, res) => {
   const id = Number(req.params.id);
 
   const user = users[id];
@@ -51,7 +51,7 @@ router.put("/users/:id", (req, res) => {
 
 // ==================== DELETE ====================
 
-router.delete("/users/:id", (req, res) => {
+router.delete("/:id", (req, res) => {
   const id = Number(req.params.id);
 
   const user = users[id];
