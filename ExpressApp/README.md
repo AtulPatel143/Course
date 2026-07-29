@@ -1,5 +1,5 @@
 ==========================================
-NODE.JS STATUS
+          NODE.JS STATUS
 ==========================================
 
 ✅ COMPLETED
@@ -28,12 +28,12 @@ NODE.JS STATUS
 ✔ npm Scripts
 ✔ Nodemon
 
----
+------------------------------------------
 
 🎉 NODE.JS FOUNDATION COMPLETE ✅
 
 ==========================================
-EXPRESS.JS STATUS
+         EXPRESS.JS STATUS
 ==========================================
 
 ✅ COMPLETED
@@ -85,11 +85,38 @@ EXPRESS.JS STATUS
 ✔ 404 (User Not Found)
 ✔ splice()
 
----
+------------------------------------------
+
+✅ EXPRESS ROUTER (Completed Till Now)
+
+✔ Why Express Router?
+✔ routes Folder
+✔ user.js
+✔ express.Router()
+✔ router.post()
+✔ module.exports
+✔ require("./routes/user")
+✔ app.use(userRouter)
+✔ Router Flow
+✔ Hoppscotch Testing
+✔ app.post() vs router.post()
+
+------------------------------------------
+
+📚 EXPRESS ROUTER (Remaining)
+
+⬜ Base Path (app.use("/users", userRouter))
+⬜ Multiple Routers
+⬜ CRUD inside Router
+⬜ Fix users is not defined
+⬜ Share Data Between Files
+⬜ Router Best Practices
+
+------------------------------------------
 
 📚 NEXT TOPICS
 
-1. Express Router
+1. Express Router (Remaining)
 2. MVC Architecture
 3. SQL
 4. Node + SQL
@@ -104,11 +131,13 @@ EXPRESS.JS STATUS
 CURRENT PROGRESS
 ==========================================
 
-🟢 Node.js Foundation ✅ 100% Complete
+🟢 Node.js Foundation       ✅ 100% Complete
 
-🟢 Express Foundation ✅ 100% Complete
+🟢 Express Foundation       ✅ 100% Complete
 
-🟢 CRUD APIs (Memory) ✅ 100% Complete
+🟢 CRUD APIs (Memory)       ✅ 100% Complete
+
+🟡 Express Router           ✅ ~50% Complete
 
 🎯 Current Topic
 

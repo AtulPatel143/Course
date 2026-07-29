@@ -1,10 +1,12 @@
 const express = require("express");
 const app = express();
+const userRouter = require("./routes/user");
 
 const users = [];
 
 app.use(express.json()); // JSON data पढ़ने के लिए
 app.use(express.urlencoded({ extended: true })); // Form data पढ़ने के लिए
+app.use(userRouter);
 
 // ==================== CREATE ====================
 
