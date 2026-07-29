@@ -87,7 +87,7 @@
 
 ------------------------------------------
 
-✅ EXPRESS ROUTER (Completed Till Now)
+✅ EXPRESS ROUTER
 
 ✔ Why Express Router?
 ✔ routes Folder
@@ -101,15 +101,24 @@
 ✔ Hoppscotch Testing
 ✔ app.post() vs router.post()
 
+✔ data.js
+✔ module.exports (Shared Data)
+✔ require("../data")
+✔ Share Data Between Files
+✔ Fix users is not defined
+✔ CRUD Inside Router
+✔ POST in Router
+✔ GET All in Router
+✔ GET By ID in Router
+✔ PUT in Router
+✔ DELETE in Router
+
 ------------------------------------------
 
 📚 EXPRESS ROUTER (Remaining)
 
 ⬜ Base Path (app.use("/users", userRouter))
 ⬜ Multiple Routers
-⬜ CRUD inside Router
-⬜ Fix users is not defined
-⬜ Share Data Between Files
 ⬜ Router Best Practices
 
 ------------------------------------------
@@ -137,8 +146,8 @@ CURRENT PROGRESS
 
 🟢 CRUD APIs (Memory)       ✅ 100% Complete
 
-🟡 Express Router           ✅ ~50% Complete
+🟡 Express Router           ✅ ~90% Complete
 
 🎯 Current Topic
 
-➡ Express Router
+➡ Express Router (Base Path)
