@@ -1,43 +1,20 @@
 const express = require("express"); // Express को import किया
-const router = express.Router(); // Router object बनाया
+const {
+  createProduct,
+  getProducts,
+  updateProduct,
+  deleteProduct,
+} = require("../controllers/productController");
+const router = express.Router();
 
-const product = [];
+const products = require("../productData");
 
-router.get("/", (req, res) => {
-  res.json(product);
-});
+router.get("/", getProducts);
 
-router.post("/", (req, res) => {
-  product.push(req.body);
-  res.json(product);
-});
+router.post("/", createProduct);
 
-router.put("/:id", (req, res) => {
-  const id = Number(req.params.id);
+router.put("/:id", updateProduct);
 
-  const selectedProduct = product[id];
-
-  if (!selectedProduct) {
-    return res.status(404).send("User not found");
-  }
-
-  product[id] = req.body;
-
-  res.json(product);
-});
-
-router.delete("/:id", (req, res) => {
-  const id = Number(req.params.id);
-
-  const selectedProduct = product[id];
-
-  if (!selectedProduct) {
-    return res.status(404).send("User not found");
-  }
-
-  product.splice(id, 1);
-
-  res.json(product);
-});
+router.delete("/:id", deleteProduct);
 
 module.exports = router;

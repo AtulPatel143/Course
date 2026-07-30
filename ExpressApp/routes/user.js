@@ -3,16 +3,6 @@ const router = express.Router(); // Router object बनाया
 
 const users = require("../routes/data"); // Shared users array लिया
 
-// ==================== CREATE ====================
-
-router.post("/submit", (req, res) => {
-  console.log(req.body); // Client का data देखना
-
-  users.push(req.body); // Data array में add करना
-
-  res.send("User added"); // Success response भेजना
-});
-
 // ==================== READ ALL ====================
 
 router.get("/users", (req, res) => {
@@ -31,6 +21,16 @@ router.get("/:id", (req, res) => {
   }
 
   res.send(user);
+});
+
+// ==================== CREATE ====================
+
+router.post("/submit", (req, res) => {
+  console.log(req.body); // Client का data देखना
+
+  users.push(req.body); // Data array में add करना
+
+  res.send("User added"); // Success response भेजना
 });
 
 // ==================== UPDATE ====================
