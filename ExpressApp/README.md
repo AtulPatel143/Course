@@ -36,7 +36,7 @@
          EXPRESS.JS STATUS
 ==========================================
 
-✅ COMPLETED
+🟢 COMPLETED
 
 ✔ Express Installation
 ✔ Basic Server
@@ -51,83 +51,38 @@
 ✔ res
 ✔ req.url
 ✔ req.method
-✔ req.headers
-✔ req.params
-✔ req.query
-✔ req.body
-
-✔ res.send()
-✔ res.json()
-✔ res.status()
-
-✔ GET Request
-✔ POST Request
-✔ PUT Request
-✔ DELETE Request
 
 ✔ express.json()
 ✔ express.urlencoded()
 
-✔ HTML Forms
-✔ req.body Flow
-
-✔ Hoppscotch Testing
-
-✔ CRUD (Memory)
-✔ GET All
-✔ GET by ID
-✔ POST
-✔ PUT
-✔ DELETE
-
-✔ Validation
-✔ return
-✔ 404
-✔ splice()
-
-------------------------------------------
-
-✅ EXPRESS ROUTER
-
-✔ Why Express Router
+✔ Express Router
 ✔ routes Folder
 ✔ express.Router()
-✔ router.get()
-✔ router.post()
-✔ router.put()
-✔ router.delete()
-
-✔ module.exports
-✔ require()
-
-✔ Base Path
 ✔ app.use()
+✔ Base Path
 
-✔ Router Flow
-
-✔ Shared Data
-✔ data.js
-✔ CRUD in Router
-
-✔ Router Best Practices
-
-------------------------------------------
-
-✅ MVC ARCHITECTURE
-
-✔ What is MVC
-✔ Why MVC
+✔ MVC Architecture
 ✔ Model
 ✔ View
 ✔ Controller
 ✔ Routes
-✔ MVC Folder Structure
-✔ Move CRUD into Controller
-✔ Connect Routes to Controller
 ✔ MVC Flow
-✔ Hoppscotch Testing
 
-🎉 EXPRESS + MVC COMPLETE ✅
+✔ Shared Data (data.js)
+✔ Controller + Router Connection
+
+✔ Middleware
+✔ Global Middleware
+✔ Route Middleware
+✔ req.query
+✔ next()
+✔ Route Protection
+✔ Authentication (Concept)
+✔ Authorization (Concept)
+
+------------------------------------------
+
+🎉 EXPRESS FOUNDATION COMPLETE ✅
 
 ==========================================
             EJS STATUS
@@ -139,44 +94,64 @@
 ✔ Why Template Engine
 ✔ Why EJS
 ✔ Install EJS
-✔ node_modules
 ✔ app.set("view engine","ejs")
 ✔ views Folder
 ✔ home.ejs
 ✔ res.render()
 ✔ Rendering Concept
+
 ✔ Interpolation (<%= %>)
-✔ Passing Data to EJS
-✔ Controller → EJS Flow
-
-🟡 IN PROGRESS
-
-✔ Difference between
+✔ Difference
    <%= %>
    <% %>
 
-⬜ if Statement
-⬜ else Statement
-⬜ Loops
-⬜ Includes
-⬜ Static Files
-⬜ Mini Instagram Project
+✔ Passing Data to EJS
+✔ Controller → EJS Flow
+
+✔ if Statement
+✔ else Statement
+✔ Loops
+
+✔ Serving Static Files
+✔ public Folder
+✔ css Folder
+✔ style.css
+✔ express.static()
+✔ CSS Linking (Foundation)
+
+✔ Includes
+✔ includes Folder
+✔ navbar.ejs
+✔ include()
+
+------------------------------------------
+
+🟡 NEXT
+
+⬜ Instagram Project (Revision Project)
+
+🎯 After Project
+
+🎉 EJS FOUNDATION COMPLETE ✅
 
 ==========================================
 NEXT ROADMAP
 ==========================================
 
-1. ✅ Finish EJS
-2. SQL (MySQL)
-3. SQL + Node.js
-4. MongoDB
-5. MongoDB + Express
-6. Prisma / ORM
-7. Database CRUD
-8. Authentication
-9. JWT
-10. Complete REST API
-11. Full Backend Project
+1. ✅ Finish EJS (Instagram Project)
+2. Route Params
+3. Request Body
+4. Response Methods
+5. SQL (MySQL)
+6. SQL + Node.js
+7. MongoDB
+8. MongoDB + Express
+9. Prisma / ORM
+10. Database CRUD
+11. Authentication (Implementation)
+12. JWT
+13. Complete REST API
+14. Full Backend Project
 
 ==========================================
 CURRENT PROGRESS
@@ -186,15 +161,16 @@ CURRENT PROGRESS
 
 🟢 Express Foundation       ✅ 100%
 
-🟢 CRUD APIs                ✅ 100%
-
 🟢 Express Router           ✅ 100%
 
 🟢 MVC                      ✅ 100%
 
-🟢 EJS                      🟡 ~60%
+🟢 Middleware               ✅ 100%
+
+🟢 EJS Foundation           🟡 ~95%
 
 🎯 Current Topic
 
-➡ EJS Conditions (`if`, `else`)
-➡ Next: Loops
+➡ Instagram Project (Revision)
+➡ After that:
+   🎉 EJS Foundation Complete
