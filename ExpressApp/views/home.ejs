@@ -6,10 +6,10 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Name : <%= name %></h1>
+    <% for (let fruit of fruits) { %>
 
-    <p>Age : <%= age %></p>
+  <li><%= fruit %></li>
 
-    <p>City : <%= city %></p>
+  <% } %>
   </body>
 </html>

@@ -1,3 +1,5 @@
 const users = []; // Shared users array
 
-module.exports = users; // दूसरी files को यही array देना
+const fruits = ["Apple", "Mango", "Banana"];
+
+module.exports = { users, fruits }; // दूसरी files को यही array देना
