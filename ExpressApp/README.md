@@ -23,8 +23,8 @@
 ✔ package-lock.json
 ✔ node_modules
 ✔ Installing Packages
-✔ cowsay Package
 ✔ Using External Packages
+✔ cowsay Package
 ✔ npm Scripts
 ✔ Nodemon
 
@@ -68,90 +68,133 @@
 ✔ express.json()
 ✔ express.urlencoded()
 
-✔ HTML Form
-✔ CSS Form
-✔ Form → Express → req.body Flow
+✔ HTML Forms
+✔ req.body Flow
 
 ✔ Hoppscotch Testing
 
-✔ Store Data in Array
-✔ Display Stored Data (GET All)
-✔ Display Single User (GET by ID)
-✔ Update User (PUT)
-✔ Delete User (DELETE)
+✔ CRUD (Memory)
+✔ GET All
+✔ GET by ID
+✔ POST
+✔ PUT
+✔ DELETE
 
 ✔ Validation
 ✔ return
-✔ 404 (User Not Found)
+✔ 404
 ✔ splice()
 
 ------------------------------------------
 
 ✅ EXPRESS ROUTER
 
-✔ Why Express Router?
+✔ Why Express Router
 ✔ routes Folder
-✔ user.js
-✔ product.js
 ✔ express.Router()
 ✔ router.get()
 ✔ router.post()
 ✔ router.put()
 ✔ router.delete()
+
 ✔ module.exports
-✔ require("./routes/user")
-✔ require("./routes/product")
-✔ app.use(userRouter)
+✔ require()
+
 ✔ Base Path
-✔ app.use("/users", userRouter)
-✔ app.use("/products", productRouter)
+✔ app.use()
+
 ✔ Router Flow
-✔ Hoppscotch Testing
-✔ app.post() vs router.post()
 
+✔ Shared Data
 ✔ data.js
-✔ module.exports (Shared Data)
-✔ require("../data")
-✔ Share Data Between Files
-✔ Fix users is not defined
+✔ CRUD in Router
 
-✔ CRUD Inside User Router
-✔ CRUD Inside Product Router
+✔ Router Best Practices
 
 ------------------------------------------
 
-📚 EXPRESS ROUTER (Remaining)
+✅ MVC ARCHITECTURE
 
-⬜ Router Best Practices
+✔ What is MVC
+✔ Why MVC
+✔ Model
+✔ View
+✔ Controller
+✔ Routes
+✔ MVC Folder Structure
+✔ Move CRUD into Controller
+✔ Connect Routes to Controller
+✔ MVC Flow
+✔ Hoppscotch Testing
 
-------------------------------------------
+🎉 EXPRESS + MVC COMPLETE ✅
 
-📚 NEXT TOPICS
+==========================================
+            EJS STATUS
+==========================================
 
-1. Router Best Practices
-2. MVC Architecture
-3. SQL
-4. Node + SQL
-5. MongoDB
-6. MongoDB with Express
-7. Prisma
-8. CRUD with Database
-9. Authentication (JWT)
+🟢 COMPLETED
+
+✔ What is Templating
+✔ Why Template Engine
+✔ Why EJS
+✔ Install EJS
+✔ node_modules
+✔ app.set("view engine","ejs")
+✔ views Folder
+✔ home.ejs
+✔ res.render()
+✔ Rendering Concept
+✔ Interpolation (<%= %>)
+✔ Passing Data to EJS
+✔ Controller → EJS Flow
+
+🟡 IN PROGRESS
+
+✔ Difference between
+   <%= %>
+   <% %>
+
+⬜ if Statement
+⬜ else Statement
+⬜ Loops
+⬜ Includes
+⬜ Static Files
+⬜ Mini Instagram Project
+
+==========================================
+NEXT ROADMAP
+==========================================
+
+1. ✅ Finish EJS
+2. SQL (MySQL)
+3. SQL + Node.js
+4. MongoDB
+5. MongoDB + Express
+6. Prisma / ORM
+7. Database CRUD
+8. Authentication
+9. JWT
 10. Complete REST API
+11. Full Backend Project
 
 ==========================================
 CURRENT PROGRESS
 ==========================================
 
-🟢 Node.js Foundation       ✅ 100% Complete
+🟢 Node.js Foundation       ✅ 100%
 
-🟢 Express Foundation       ✅ 100% Complete
+🟢 Express Foundation       ✅ 100%
 
-🟢 CRUD APIs (Memory)       ✅ 100% Complete
+🟢 CRUD APIs                ✅ 100%
 
-🟢 Express Router           ✅ ~98% Complete
+🟢 Express Router           ✅ 100%
+
+🟢 MVC                      ✅ 100%
+
+🟢 EJS                      🟡 ~60%
 
 🎯 Current Topic
 
-➡ Router Best Practices
-➡ Next: MVC Architecture
+➡ EJS Conditions (`if`, `else`)
+➡ Next: Loops
