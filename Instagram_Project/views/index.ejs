@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <%- include("includes/navbar") %>
+
+    <div class="feed">
+
+        <% users.forEach(function(user, index){ %>
+
+            <a href="/post/<%= index + 1 %>" class="post-link">
+
+                <div class="post">
+
+                    <div class="post-header">
+                        <img src="https://i.pravatar.cc/50" alt="">
+                        <h3><%= user.name %></h3>
+                    </div>
+
+                    <img
+                        class="post-image"
+                        src="<%= user.image %>"
+                        alt=""
+                    >
+
+                    <div class="post-content">
+
+                        <% if (user.caption) { %>
+
+                            <p><%= user.caption %></p>
+
+                        <% } else { %>
+
+                            <p>No caption provided</p>
+
+                        <% } %>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+        <% }) %>
+
+    </div>
+
+</body>
+</html>

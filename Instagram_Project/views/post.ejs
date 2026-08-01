@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= user.name %></title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <%- include("includes/navbar") %>
+
+    <div class="feed">
+
+        <div class="post">
+
+            <div class="post-header">
+                <img src="https://i.pravatar.cc/50" alt="">
+                <h3><%= user.name %></h3>
+            </div>
+
+            <img
+                class="post-image"
+                src="<%= user.image %>"
+                alt=""
+            >
+
+            <div class="post-content">
+
+                <% if (user.caption) { %>
+
+                    <p><%= user.caption %></p>
+
+                <% } else { %>
+
+                    <p>No caption provided</p>
+
+                <% } %>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
