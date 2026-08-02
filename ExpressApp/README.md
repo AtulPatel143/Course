@@ -80,6 +80,21 @@
 ✔ Authentication (Concept)
 ✔ Authorization (Concept)
 
+✔ Route Params
+✔ req.params
+✔ Dynamic Routes
+
+✔ Request Body
+✔ req.body
+✔ Form Data
+✔ POST Request Body
+
+✔ Response Methods
+✔ res.send()
+✔ res.render()
+✔ res.json()
+✔ res.redirect()
+
 ------------------------------------------
 
 🎉 EXPRESS FOUNDATION COMPLETE ✅
@@ -124,13 +139,11 @@
 ✔ navbar.ejs
 ✔ include()
 
+✔ Instagram Revision Project
+✔ Dynamic Rendering
+✔ Route Params Integration
+
 ------------------------------------------
-
-🟡 NEXT
-
-⬜ Instagram Project (Revision Project)
-
-🎯 After Project
 
 🎉 EJS FOUNDATION COMPLETE ✅
 
@@ -138,20 +151,16 @@
 NEXT ROADMAP
 ==========================================
 
-1. ✅ Finish EJS (Instagram Project)
-2. Route Params
-3. Request Body
-4. Response Methods
-5. SQL (MySQL)
-6. SQL + Node.js
-7. MongoDB
-8. MongoDB + Express
-9. Prisma / ORM
-10. Database CRUD
-11. Authentication (Implementation)
-12. JWT
-13. Complete REST API
-14. Full Backend Project
+1. SQL (MySQL)
+2. SQL + Node.js
+3. MongoDB
+4. MongoDB + Express
+5. Prisma / ORM
+6. Database CRUD
+7. Authentication (Implementation)
+8. JWT
+9. Complete REST API
+10. Full Backend Project
 
 ==========================================
 CURRENT PROGRESS
@@ -167,10 +176,16 @@ CURRENT PROGRESS
 
 🟢 Middleware               ✅ 100%
 
-🟢 EJS Foundation           🟡 ~95%
+🟢 Route Params             ✅ 100%
+
+🟢 Request Body             ✅ 100%
+
+🟢 Response Methods         ✅ 100%
+
+🟢 EJS Foundation           ✅ 100%
+
+🟢 Instagram Project        ✅ 100%
 
 🎯 Current Topic
 
-➡ Instagram Project (Revision)
-➡ After that:
-   🎉 EJS Foundation Complete
+➡ SQL (MySQL)
